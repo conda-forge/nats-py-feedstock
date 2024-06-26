@@ -1,13 +1,13 @@
 {% set name = "nats-py" %}
-{% set version = "2.7.2" %}
+{% set version = "2.8.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nats-py-{{ version }}.tar.gz
-  sha256: 0c97b4a57bed0ef1ff9ae6c19bc115ec7ca8ede5ab3e001fd00a377056a547cf
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: e998dcacd711db3b90b469dcdd96c526cc56c421bad27be0f5f40e88005a7c44
 
 build:
   noarch: python
